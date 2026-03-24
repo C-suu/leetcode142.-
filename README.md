@@ -13,7 +13,7 @@ class Solution:
         slow = fast = head
         
         # 只要快指针不为空，且快指针的下一个节点也不为空，就持续执行循环（防止越界报错）
-        while fast and fast.next:
+        while fast and fast.next is not None:
             # 慢指针每次向后移动一步
             slow = slow.next
             
